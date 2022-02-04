@@ -37,7 +37,7 @@ def main():
             for image in os.listdir(args.path):
                 if image.endswith((".jpg", ".jpeg", ".png")):
                     img = Image.open(f'{args.path}/{image}')
-                    img.save(f'{args.output}/' + image, optimize=True, quality=args.quality)
+                    img.save(f'{args.output}/{image}', optimize=True, quality=args.quality)
 
         else:
             for image in os.listdir(args.path):
