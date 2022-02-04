@@ -36,22 +36,14 @@ def main():
         if not args.number:
             for image in os.listdir(args.path):
                 if image.endswith((".jpg", ".jpeg", ".png")):
-                    img = Image.open(args.path + "/" + image)
-                    img.save(
-                        args.output + "/" + image,
-                        optimize=True,
-                        quality=args.quality,
-                    )
+                    img = Image.open(f'{args.path}/{image}')
+                    img.save(f'{args.output}/{image}', optimize=True, quality=args.quality)
 
         else:
             for image in os.listdir(args.path):
                 if image.endswith((".jpg", ".jpeg", ".png")):
-                    img = Image.open(args.path + "/" + image)
-                    img.save(
-                        args.output + "/" + image,
-                        optimize=True,
-                        quality=args.quality,
-                    )
+                    img = Image.open(f'{args.path}/{image}')
+                    img.save(f'{args.output}/{image}', optimize=True, quality=args.quality)
                     args.number -= 1
                     if args.number == 0:
                         break
