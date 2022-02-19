@@ -85,6 +85,3 @@ def recursive_optimize(number):
                     if args.number == 0:
                         break
     return number
-
-
-main()
