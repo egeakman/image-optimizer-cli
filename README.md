@@ -18,7 +18,7 @@ Run:&nbsp; ``pip install image-optimizer-cli``
 
 * Optimize a number of images: ``image-optimizer -p /path/to/images/ -n 10``
 
-* Optimize with custom quality: ``image-optimizer -p /path/to/images/ -q 80``
+* Optimize with custom quality: ``image-optimizer -p /path/to/images/ -q 30``
 
 ## Parameters
 
