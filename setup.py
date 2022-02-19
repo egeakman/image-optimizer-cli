@@ -27,9 +27,9 @@ setup(
     description="A PIL based image optimizer",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    version="2022.2.4",
+    version="2022.2.19",
     license="AGPLv3",
-    download_url="https://github.com/egeakman/image-optimizer-cli/archive/2022.2.4.tar.gz",
+    download_url="https://github.com/egeakman/image-optimizer-cli/archive/2022.2.19.tar.gz",
     packages=find_packages(where=".", exclude=["tests"]),
     python_requires=">=3.6",
     entry_points={
