@@ -40,7 +40,7 @@ def main():
     global number
     print("Starting image optimizer...")
 
-    if args.number <= 0:
+    if args.number and args.number <= 0:
         sys.exit("Number parameter must be a positive integer.")
 
     if os.path.isfile(args.path):
@@ -85,3 +85,6 @@ def recursive_optimize(number):
                     if args.number == 0:
                         break
     return number
+
+
+main()
